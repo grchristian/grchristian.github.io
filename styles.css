@@ -1,0 +1,16 @@
+body {
+  background-color: whitesmoke;
+  font-family: verdana;
+  font-size: 52px;
+}
+
+h1 {
+    text-align: center;
+    color: royalblue;
+}
+
+
+p {
+    text-align: center;
+    color: brown;
+}
