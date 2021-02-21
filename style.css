@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Barra superior con links */
+.links {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*-------------------- links --------------------*/
+.links a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 28px;
+    color: darkred;
+}
+
+/*-------------- propiedades links --------------*/
+.links a:hover {
+    background-color: gold;
+    color: black;
+}
+
+/*----------- contenido de la página -----------*/
+.principal {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+/*------------------- footer -------------------*/
+.footer {
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    color: whitesmoke;
+}
