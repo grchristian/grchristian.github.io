@@ -53,16 +53,53 @@ h2 {
 
 
 .perfil h3, h5 {
-    margin: 0
+    margin: 0;
 }
 
 h4, h2, hr {
-    margin: 0
-}
-.cpp {
-    color: aqua;
+    margin: 0;
 }
 
+h6 {
+    margin: 0;
+    text-align: center;
+}
+/*------------------- barras -------------------*/
 
+.barras {
+    padding: 0 20%;
+}
 
+.barra-titulo {
+    padding: 5px 0;
+}
+.barra-gris {
+  padding: 4px;
+  border-radius: 30px;
+  background: gainsboro;
+}
+.barra-color {
+  height: 13px;
+  border-radius: 30px;
+}
+#cpp {
+    background-color: dodgerblue;
+    width: 90%;
+}
+#py {
+    background-color: darkorange;
+    width: 80%;
+}
+#htmlcss {
+    background-color: gold;
+    width: 100%;
+}
+#matlab {
+    background-color: deeppink;
+    width: 100%;
+}
+#clj {
+    background-color: lawngreen;
+    width: 20%;
+}
 
