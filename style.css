@@ -38,22 +38,23 @@ footer {
 }
 
 /*---------------- texto general ----------------*/
-h1 {
-    color: firebrick;
-}
-h6 {
-    text-align: center;
-}
-
 .sec-perfil {
     text-align: center;
     padding: 1% 0;
 }
+h1 {
+    color: firebrick;
+}
+.sec-habilidades h6 {
+    text-align: center;
+}
+
 .sec-habilidades {
     padding: 1% 0;
 }
 .sec-experiencia {
     padding: 1% 0;
+    text-align: center;
 }
 .sec-proyectos {
     padding: 1% 0;
@@ -73,6 +74,14 @@ h1, h2, h3, h4, h5, h6, hr, p {
     margin: 0;
 }
 
+.sec-hobbies h5, h6 {
+    text-align: center;
+}
+
+.sec-gustos h5 {
+    text-align: center;
+}
+
 /*------------------- barras -------------------*/
 .barras {
     padding: 0 20%;
@@ -90,15 +99,15 @@ h1, h2, h3, h4, h5, h6, hr, p {
   border-radius: 30px;
 }
 #cpp {
-    background-color: dodgerblue;
+    background-color: cornflowerblue;
     width: 90%;
 }
 #py {
-    background-color: darkorange;
+    background-color: aquamarine;
     width: 80%;
 }
 #htmlcss {
-    background-color: gold;
+    background-color: wheat;
     width: 100%;
 }
 #clj {
@@ -106,14 +115,26 @@ h1, h2, h3, h4, h5, h6, hr, p {
     width: 25%;
 }
 #office {
-    background-color: lightcoral;
+    background-color: pink;
     width: 100%;
 }
 #adobe {
     background-color: greenyellow;
-    width: 100%;
+    width: 90%;
 }
 #matlab {
     background-color: hotpink;
     width: 90%;
+}
+#espa {
+    background-color: navajowhite;
+    width: 100%;
+}
+#ingles {
+    background-color: palegreen;
+    width: 90%;
+}
+#ruso {
+    background-color: lightblue;
+    width: 55%;
 }
