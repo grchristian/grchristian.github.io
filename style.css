@@ -42,22 +42,14 @@ footer {
     text-align: center;
     padding: 1% 0;
 }
-h1 {
-    color: firebrick;
-}
-.sec-habilidades h6 {
-    text-align: center;
-}
-
 .sec-habilidades {
     padding: 1% 0;
 }
 .sec-experiencia {
     padding: 1% 0;
-    text-align: center;
 }
 .sec-proyectos {
-    padding: 1% 0;
+    padding: 1% 0;   
 }
 .sec-hobbies {
     padding: 1% 0;
@@ -79,6 +71,16 @@ h1, h2, h3, h4, h5, h6, hr, p {
 }
 
 .sec-gustos h5 {
+    text-align: center;
+}
+h1 {
+    color: firebrick;
+}
+.sec-habilidades h6 {
+    text-align: center;
+}
+
+.sec-experiencia h3, h5, h6 {
     text-align: center;
 }
 
