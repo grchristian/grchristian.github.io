@@ -58,14 +58,31 @@ footer {
     padding: 1% 0;
 }
 
-.sec-habilidades h4 {
-    text-align: center;
-}
 
-h1, h2, h3, h4, h5, h6, hr, p {
+h1, h2, h3, h4, h5, h6, hr, p, li, ul {
     margin: 0;
 }
 
+h1 {
+    color: firebrick;
+}
+
+.sec-habilidades h6 {
+    text-align: center;
+}
+.sec-habilidades h4 {
+    text-align: center;
+}
+.sec-habilidades h2 {
+    text-align: right;
+    padding: 5%;
+}
+#app-barras {
+    text-align: left;
+}
+.sec-experiencia h2, h5, h6 {
+    text-align: center;
+}
 .sec-hobbies h5, h6 {
     text-align: center;
 }
@@ -73,20 +90,20 @@ h1, h2, h3, h4, h5, h6, hr, p {
 .sec-gustos h5 {
     text-align: center;
 }
-h1 {
-    color: firebrick;
+/*-------------------- tablas --------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;    
 }
-.sec-habilidades h6 {
-    text-align: center;
+td {
+    width: 50%;
 }
-
-.sec-experiencia h3, h5, h6 {
-    text-align: center;
+#tabla-descrp {
+    width: 80%;
 }
-
 /*------------------- barras -------------------*/
 .barras {
-    padding: 0 20%;
+    padding: 1% 5%;
 }
 .barra-titulo {
     padding: 5px 0;
