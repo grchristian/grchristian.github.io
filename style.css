@@ -7,11 +7,11 @@ body {
     margin:0;
 }
 /*-------------------- links --------------------*/
-.links {
+.barra-links {
     overflow: hidden;
     background-color: #333;
 }
-.links a {
+.barra-links a {
     float: right;
     display: block;
     color: whitesmoke;
@@ -26,7 +26,7 @@ body {
 /*----------- contenido de la página -----------*/
 .principal {
     background-color: whitesmoke;
-    padding: 2% 25%;
+    padding: 0 25%;
 
 }
 /*------------------- footer -------------------*/
@@ -37,39 +37,46 @@ footer {
     color: whitesmoke;
 }
 
-
-
 /*---------------- texto general ----------------*/
-h2 {
-    font-size: 28px;
+h1 {
     color: firebrick;
 }
-
-
-.perfil {
-    text-align: center;
-}
-
-
-
-.perfil h3, h5 {
-    margin: 0;
-}
-
-h4, h2, hr {
-    margin: 0;
-}
-
 h6 {
-    margin: 0;
     text-align: center;
 }
-/*------------------- barras -------------------*/
 
+.sec-perfil {
+    text-align: center;
+    padding: 1% 0;
+}
+.sec-habilidades {
+    padding: 1% 0;
+}
+.sec-experiencia {
+    padding: 1% 0;
+}
+.sec-proyectos {
+    padding: 1% 0;
+}
+.sec-hobbies {
+    padding: 1% 0;
+}
+.sec-gustos {
+    padding: 1% 0;
+}
+
+.sec-habilidades h4 {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p {
+    margin: 0;
+}
+
+/*------------------- barras -------------------*/
 .barras {
     padding: 0 20%;
 }
-
 .barra-titulo {
     padding: 5px 0;
 }
@@ -94,12 +101,19 @@ h6 {
     background-color: gold;
     width: 100%;
 }
-#matlab {
-    background-color: deeppink;
-    width: 100%;
-}
 #clj {
     background-color: lawngreen;
-    width: 20%;
+    width: 25%;
 }
-
+#office {
+    background-color: lightcoral;
+    width: 100%;
+}
+#adobe {
+    background-color: greenyellow;
+    width: 100%;
+}
+#matlab {
+    background-color: hotpink;
+    width: 90%;
+}
