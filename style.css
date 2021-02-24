@@ -91,9 +91,10 @@ h1 {
     text-align: center;
 }
 /*-------------------- tablas --------------------*/
-table {
+table, td {
     width: 100%;
-    border-collapse: collapse;    
+    border-collapse: collapse;
+
 }
 td {
     width: 50%;
@@ -101,6 +102,11 @@ td {
 #tabla-descrp {
     width: 80%;
 }
+
+#cell-photo {
+    width: 33%;
+}
+
 /*------------------- barras -------------------*/
 .barras {
     padding: 1% 5%;
@@ -156,4 +162,19 @@ td {
 #ruso {
     background-color: lightblue;
     width: 55%;
+}
+
+/*------------------- fotos -------------------*/
+div.polaroid {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateX(5%)
+}
+#fotohobi {
+    width: 100%
+}
+div.container {
+    text-align: center;
+    padding: 10px 20px;
 }
