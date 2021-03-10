@@ -1,284 +1,330 @@
 <!DOCTYPE html>
-
-<html lang="en-US">
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Christian González</title>
+    <link rel="stylesheet" href="style.css">
+    <!--favicon en svg-->
+    <link rel="icon" type="image/svg+xml" href="img/fav.svg" sizes="any">
+  </head>
+  
+  <body>
     <head>
-        <title>Christian's CV</title>
-        
-        <meta charset="utf-8">
-        <!--fuente-->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        
-        <!--para que se acomode al tamaño de la pantalla-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!--favicon en svg-->
-        <link rel="icon" type="image/svg+xml" href="foto/avatar.svg" sizes="any">
-        
-        <!--estilos de css-->
-        <link rel="stylesheet" href="style.css">
+      <title>Personal</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <!--favicon con bootstrap-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" type="text/css">
+      <!--favicon con Google fonts-->
+      <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     </head>
     
-    <body>
-        <!------------------------- LINKS ------------------------->
-        <div class="barra-links">
-            <a href="#gustos">Gustos</a>
-            <a href="#hobbies">hobbies</a>
-            <a href="#proyectos">Projects</a>
-            <a href="#experiencia">Experience</a>
-            <a href="#habilidades">Skills</a>   
+    <body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+      
+      <!--header start-->
+      <div id="header" class="container-fluid d-flex">
+        <div class="menu-overlay"></div>
+        
+        <div class="menu">
+          <div class="toggler">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+          <ul class="nav-content" id="navigation">
+            <li><a class="nav-link" href="#header">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop">CV</a>
+              <div id="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="#cv">Skills</a></li>
+                  <li><a class="dropdown-item" href="#experience">Experience</a></li>
+                  <li><a class="dropdown-item" href="#education">Education</a></li>
+                  <li><a class="dropdown-item" href="#diplomas">Diplomas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <!----------------------- PRINCIPAL ----------------------->
-        <div class="principal">
-            <div class="sec-perfil">
-                <img src="foto/pp.png" width="25%" height="12%">
-                <h1>Christian González</h1>
-                <br>
-                <h3>Associate's degree, Information technology</h3>
-                <h5>2013 - 2016</h5>
-                <br>
-                <h3>Bachelor of Science, Computer science and technology</h3>
-                <h5>2019 - 2023</h5>
+        
+        <div class="row align-items-center justify-content-center text-center">
+          <div>
+            <h1>Hi...</h1>
+            <hr>
+            <h4>Christian González</h4>
+          </div>
+        </div>
+      </div>
+      <!--header end-->
+      
+      <!--about start-->
+      <div id="about" class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-12 picture">
+              <img src="img/pp.jpg" class="rounded-circle" alt="picture">
             </div>
-            <!----------------------------------- HABILIDADES ----------------------------------->
-            <div class="sec-habilidades" id="habilidades">
-                <h1>Skills</h1>
-                <hr>
-                <br>
-                <table>
-                    <!--------------- LENGUAJES ---------------->
-                    <tr>
-                        <td>
-                            <h2>programming languages</h2>
-                        </td>
-                        <td>
-                            <div class="barras">
-                                <div class="barra-titulo">
-                                    <h4>C++</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="cpp">
-                                            <h6>90%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="barra-titulo">
-                                    <h4>Python</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="py">
-                                            <h6>80%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="barra-titulo">
-                                    <h4>MTML and CSS</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="htmlcss">
-                                            <h6>100%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="barra-titulo">
-                                    <h4>Clojure</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="clj">
-                                            <h6>25%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <!-------------- APLICACIONES --------------->
-                    <tr>
-                        <td>
-                            <div class="barras">
-                                <div class="barra-titulo">
-                                    <h4>Microsoft Office</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="office">
-                                            <h6>100%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="barra-titulo">
-                                    <h4>Adobe Creative Suite</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="adobe">
-                                            <h6>90%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="barra-titulo">
-                                    <h4>MATLAB</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="matlab">
-                                            <h6>90%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <h2 id="app-barras">Applications</h2>
-                        </td>
-                    </tr>
-                    <!--------------- IDIOMAS ---------------->
-                    <tr>
-                        <td>
-                            <h2>idioms</h2>
-                        </td>
-                        <td>
-                            <div class="barras">
-                                <div class="barra-titulo">
-                                    <h4>Spanish</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="espa">
-                                            <h6>100%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="barra-titulo">
-                                    <h4>English</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="ingles">
-                                            <h6>90%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="barra-titulo">
-                                    <h4>Russian</h4>
-                                    <div class="barra-gris">
-                                        <div class="barra-color" id="ruso">
-                                            <h6>55%</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+            <div class="col-md-9 col-sm-12 offset-md-1">
+              <h2>About</h2>
+              <p>Praesent vitae viverra augue. In pellentesque lorem aliquam bibendum tristique. Maecenas sed nunc sit amet arcu lacinia mattis. Donec justo enim, tristique vitae lorem sed, blandit tincidunt nulla. Nunc arcu ligula, pellentesque et condimentum sed, semper quis neque. Sed eget risus eget dolor mattis finibus in ac orci. Donec vitae posuere quam, sed pretium lacus. Nullam ut risus maximus, ultrices sapien vel, malesuada magna. Maecenas finibus augue eget dictum mollis.</p>
+              <br>
+              <p>Nunc consequat ullamcorper urna, quis dignissim quam semper et. Phasellus pretium felis molestie nisi gravida, ac posuere nisl auctor. Vestibulum malesuada, nisi at posuere mattis, lectus nibh hendrerit quam, vel mattis nulla leo id sapien. Morbi porttitor enim tortor, ut rutrum orci commodo in. Donec pharetra nisi eu neque pharetra vulputate. Integer arcu sem, pulvinar in congue sed, ornare in nibh. Sed faucibus efficitur dui, et porttitor massa feugiat sit amet.</p>
+              <br>
+              <p>Cras malesuada at purus sed efficitur. Donec non leo nulla. Vestibulum sed imperdiet mauris. Mauris hendrerit turpis id libero auctor, eu bibendum urna rhoncus.</p>
             </div>
-            <!----------------------------------- EXPERIENCIA ----------------------------------->
-            <div class="sec-experiencia" id="experiencia">
-                <h1>Experience</h1>
-                <hr>
-                <br>
-                <h2>Técnico en servicios informáticos</h2>
-                <h5>Secretaría de Relaciones Exteriores de México</h5>
-                <h6>octubre 2016 - enero 2018</h6>
+          </div>
+        </div>
+      </div>
+      <!--about end-->
+
+      <!--cv start-->
+      <div class="container-fluid" id="cv">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <h3>Skills</h3>
             </div>
-            <!------------------------------------ PROYECTOS ------------------------------------>
-            <div class="sec-proyectos" id="proyectos">
-                <h1>Projects</h1>
-                <hr>
-                <br>
-                <h3>Detector de fugas</h3>
-                <table>
-                    <td id="tabla-descrp">
-                        <ul>
-                            <li>Descripción:<br>sistema que detecta fugas usando el principio de Bernoulli y el teorema de Torricelli</li>
-                        </ul>
-                    </td>
-                    <td id="tabla-fecha">
-                        <ul>
-                            <li>Fecha:<br>Enero 2021</li>
-                        </ul>
-                    </td>
-                </table>
+            <div class="col-md-9 col-sm-12 offset-md-1">
+
+              <!--programing start-->
+              <div class="skills">
+                <h4>Programming languages</h4>
+
+                <div class="skill-item">
+                  <h4>C++</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:85%; background-color:#6295C8"></div>
+                  </div>
+                </div>
                 
-                <br>
+                <div class="skill-item">
+                  <h4>Python</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:80%; background-color:#FFE873"></div>
+                  </div>
+                </div>
                 
-                <h3>Sistema de monitoreo del aire</h3>
-                <table>
-                    <td id="tabla-descrp">
-                        <ul>
-                            <li>Descripción:<br>Sistema que registra el aire con sensores y se visualizan en web</li>
-                        </ul>
-                    </td>
-                    <td id="tabla-fecha">
-                        <ul>
-                            <li>Fecha:<br>Diciembre 2021</li>
-                        </ul>
-                    </td>
-                </table>
+                <div class="skill-item">
+                  <h4>HTML & CSS</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:95%; background-color:#F16529"></div>
+                  </div>
+                </div>
+              </div>
+              <!--programing end-->
+
+              <!--skills start-->
+              <div class="skills">
+                <h4>Software</h4>
+
+                <div class="skill-item">
+                  <h4>MATLAB</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:80%; background-color:#3E8FCD"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <h4>Photoshop</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:86%; background-color:#0070FE"></div>
+                  </div>
+                </div>
                 
+                <div class="skill-item">
+                  <h4>Lightroom</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:100%; background-color:#B4D6E0"></div>
+                  </div>
+                </div>
                 
+                <div class="skill-item">
+                  <h4>Premiere Pro</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:70%; background-color:#8F53A4"></div>
+                  </div>
+                </div>
+              </div>
+              <!--skills end-->
+
+              <!--idioms end-->
+              <div class="skills">
+                <h4>Languages</h4>
                 
+                <div class="skill-item">
+                  <h4>Spanish</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:100%; background-color:#6EEB83"></div>
+                  </div>
+                </div>
                 
-                
-                
-                
+                <div class="skill-item">
+                  <h4>English</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:90%; background-color:#FD3A4A"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <h4>Russian</h4>
+                  <div class="progress">
+                    <div class="progress-bar" style="width:50%; background-color:#FBD162"></div>
+                  </div>
+                </div>
+
+              </div>
+              <!--idioms end-->
             </div>
-            <!------------------------------------- HOBBIES ------------------------------------->
-            <div class="sec-hobbies" id="hobbies">
-                <h1>Hobbies</h1>
-                <hr>
-                <br>
-                <h2>Gym</h2>
-                <br>
-                <h2>Photography</h2>
-                
-                <br>
-                
-                <p>Here are three of my favorite photos</p>
-                
-                
-                <br>
-                
-                
-                <table>
-                    <tr>
-                        <td id="cell-photo">
-                            <div class="polaroid">
-                                <img src="foto/foto01.JPG" id="fotohobi">
-                                <div class="container">
-                                    <p>Experimental photography</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td id="cell-photo">
-                            <div class="polaroid">
-                                <img src="foto/foto03.JPG" id="fotohobi">
-                                <div class="container">
-                                    <p>Documentary photography </p>
-                                </div>
-                            </div>
-                        
-                        </td>
-                        <td id="cell-photo">
-                            <div class="polaroid">
-                                <img src="foto/foto02.JPG" id="fotohobi">
-                                <div class="container">
-                                    <p>Self portrait</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                
-                <br>
-                
+          </div>
+          
+          <!--experience start-->
+          <hr id="experience">
+          
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <h3>Experience</h3>
+            </div>
+            
+            <div class="col-md-9 col-sm-12 offset-md-1">
+              <div class="exp">
+                <div class="box">
+                  <h4>Computer services technician</h4>
+                  <h6>Secretariat of Foreign Relations of Mexico&emsp;&#8226;&emsp;2016 - 2018</h6>
+                  <p>Description</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--experience end-->
+          
+          <!--educaciton start-->
+          <hr id="education">
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <h3>Education</h3>
             </div>
 
-            <!------------------------------------- GUSTOS ------------------------------------->
-            <div class="sec-gustos" id="gustos">
-                <h1>Gustos</h1>
-                <hr>
-                <br>
-                <h2>Formula 1</h2>
-                <h5><img src="foto/f1.JPG" width="80%"></h5>
-                <h2>Peliculas y series favoritas:</h2>
-                <ul>
-                    <li>La casa de papel</li>
-                    <li>El lobo de Wallstreet</li>
-                    <li>How I met your mother</li>
-                    <li>Drive to survive</li>
-                </ul>
-            </div> 
+            <div class="col-md-9 col-sm-12 offset-md-1">
+
+              <div class="box">
+                <h4>Bachelor of Science</h4>
+                <h6>School&emsp;&#8226;&emsp;2019 - 2023</h6>
+                <p>Computer science and technology</p>
+              </div>
+
+              <div class="box">
+                <h4>Associate's degree</h4>
+                <h6>School&emsp;&#8226;&emsp;2013 - 2016</h6>
+                <p>Information technology</p>
+              </div>
+              
+            </div>
+          </div>
+          <!--educaciton end-->
+          
+          <!--diplomas start-->
+          <hr id="diplomas">
+          
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+              <h3>Diplomas</h3>
+            </div>
+            <div class="col-md-9 col-sm-12 offset-md-1">
+              <div class="box">
+                <h4>Name</h4>
+                <h6>School&emsp;&#8226;&emsp;Date</h6>
+                <p>Description</p>
+              </div>
+              
+              <div class="box">
+                <h4>Name</h4>
+                <h6>School&emsp;&#8226;&emsp;Date</h6>
+                <p>Description</p>
+              </div>
+            </div>
+          </div>
+          <!--diplomas end-->
         </div>
-        <!------------------------ FOOTER ------------------------>
-        <footer>
-            <h5>Contact me:<br>contact@christiangr.me</h5>
-        </footer>
+      </div>
+      <!--cv end-->
+      
+      <!--projects start-->
+      <div class="container-fluid" id="portfolio">
+        <h2>Latest projects</h2>
+        
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <a href="https://christiangr.me/RoboWorld/" target="_blank">
+                <img src="img/projects/robo.png">
+                <div class="overlay">
+                  <h3 class="project-title">RoboWorld</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <a href="https://christiangr.me/BMI/" target="_blank">
+                <img src="img/projects/bmi.png">
+                <div class="overlay">
+                  <h3 class="project-title">Body mass index</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12">
+              <a href="https://christiangr.me/streaming-service/" target="_blank">
+                <img src="img/projects/video.png">
+                <div class="overlay">
+                  <h3 class="project-title">Streaming service</h3>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--projects end-->
+
+      <!--footer start-->
+      <footer>
+        <div class="footer-content">
+          <div>
+            <h4>Location</h4>
+            <p>Mexico</p>
+          </div>
+          
+          <div>
+            <h4>Email</h4>
+            <p>contact@christiangr.me</p>
+          </div>
+          
+          <div>
+            <h4>Phone</h4>
+            <p>01 23 45 67 89</p>
+          </div>
+          
+          <div>
+            <h4>Social</h4>
+            <a href="https://www.linkedin.com/in/christiangonzalezr/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/grchristian" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </footer>
+      <!--footer end-->
+      
+      <!--linkear con scripts-->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     </body>
+    <script  src="./script.js"></script>
+  </body>
 </html>
