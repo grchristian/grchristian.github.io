@@ -552,7 +552,7 @@ input:focus ~ .focus-border, textarea:focus ~ .focus-border{
     font-size: 16px;
     display: block;
     cursor: text;
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif !important;
 }
 
 input:focus ~ .label, textarea:focus ~ .label[for=message], input.has-value ~ .label, textarea.has-value ~ .label[for=message]{
