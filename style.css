@@ -60,7 +60,7 @@ p, span, a{
         font-size: 16px !important;
     }
 
-	#portfolio h2{font-size: 25px !important;}
+	#projects h2{font-size: 25px !important;}
 }
 
 
@@ -343,16 +343,15 @@ p, span, a{
 
 
 
-/* P O R T F O L I O */
+/* P R O J E C T S */
 
-
-#portfolio{
+#projects{
 	padding: 80px 0;
     background: #EBEEEE;
 }
 
 
-#portfolio h2{
+#projects h2{
     padding: 0;
     margin: auto;
     margin-bottom: 50px;
@@ -362,18 +361,18 @@ p, span, a{
     color: #666;
 }
 
-#portfolio img{
+#projects img{
 	max-width: 100%;
 }
 
-#portfolio .row > div{
+#projects .row > div{
 	margin-bottom: 1.5rem;
     position: relative;
 }
 
 
 
-#portfolio .row div .overlay {
+#projects .row div .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -390,14 +389,14 @@ p, span, a{
     border-radius: 20%;
 }
 
-#portfolio .row div:hover .overlay {
+#projects .row div:hover .overlay {
     opacity: 1;
     transform: scale(1);
     height: 100%;
     border-radius: 0;
 }
 
-#portfolio .row div .overlay h3{
+#projects .row div .overlay h3{
     color: #f7f7f7;
     font-size: 20px;
     position: absolute;
